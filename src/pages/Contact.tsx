@@ -4,7 +4,7 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 import { useForm, ValidationError } from '@formspree/react';
 
 const Contact: React.FC = () => {
-  const [state, handleSubmit] = useForm("xwpzkrnd");
+  const [state, handleSubmit] = useForm("mwpzkyrj");
 
   return (
     <div className="container mx-auto px-6 py-24 min-h-[80vh] flex items-center">
