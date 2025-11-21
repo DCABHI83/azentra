@@ -38,7 +38,7 @@ const FaqItem: React.FC<{ question: string; answer: string; }> = ({ question, an
 
 const Home: React.FC = () => {
   const projects = [
-    { image: image1, title: 'E-commerce Platform', link: 'https://sitegenies.vercel.app/' },
+    { image: image1, title: 'SiteGenie', link: 'https://sitegenies.vercel.app/' },
     { image: image2, title: 'Mobile Banking App', link: 'https://visra.vercel.app/' },
     { image: image3, title: 'neatNclean', link: 'https://www.neatnclean.net/' }
   ];
@@ -148,6 +148,7 @@ const Home: React.FC = () => {
       <Link 
         to={project.link} 
         key={index}
+        target='_blank'
       >
         <motion.div 
           className="group relative overflow-hidden rounded-lg cursor-pointer"
