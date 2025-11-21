@@ -185,44 +185,62 @@ const Home: React.FC = () => {
         </Section>
         
         {/* Social Proof & FAQ */}
-        <Section className="mt-24 flex flex-col gap-5 p-10">
-                      <h2 className="text-3xl font-bold">What Our Clients Say</h2>
-            <div className='flex gap-10'>
-              <div>
-    
-                <div className="mt-8 bg-white/5 p-8 rounded-lg border border-white/10">
-                    <p className="text-white/80 italic">"Working with Azentra was a game-changer. Their attention to detail and creative vision transformed our online presence. The results speak for themselves."</p>
-                    <div className="mt-4 flex items-center">
-                        <img src="https://i.pravatar.cc/40?img=1" alt="Client" className="w-10 h-10 rounded-full"/>
-                        <div className="ml-4">
-                            <p className="font-semibold">Jane Doe</p>
-                            <p className="text-sm text-white/60">CEO, Future Corp</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div className="mt-8 bg-white/5 p-8 rounded-lg border border-white/10">
-                    <p className="text-white/80 italic">"Working with Azentra was a game-changer. Their attention to detail and creative vision transformed our online presence. The results speak for themselves."</p>
-                    <div className="mt-4 flex items-center">
-                        <img src="https://i.pravatar.cc/40?img=1" alt="Client" className="w-10 h-10 rounded-full"/>
-                        <div className="ml-4">
-                            <p className="font-semibold">Jane Doe</p>
-                            <p className="text-sm text-white/60">CEO, Future Corp</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div className='mt-10'>
-                <h2 className="text-3xl font-bold">Frequently Asked Questions</h2>
-                <div className="mt-8">
-                    <FaqItem question="What is the average project timeline?" answer="Timelines vary based on complexity, but a typical website project takes 6-8 weeks from discovery to launch." />
-                    <FaqItem question="How much does a project cost?" answer="Costs are determined by the project scope. We offer packages for startups and custom quotes for enterprise-level projects. Check our 'Get Started' page for more details." />
-                    <FaqItem question="Do you offer ongoing support?" answer="Yes, we provide monthly retainers for maintenance, updates, and ongoing strategic support to ensure your digital product continues to perform optimally." />
-                </div>
-            </div>
-        </Section>
+       <Section className="mt-24 flex flex-col gap-12 p-4 sm:p-8 md:p-10">
+  <div className="flex flex-col lg:flex-row gap-8">
+    {/* Social Proof */}
+    <div className="flex-1">
+      <h2 className="text-3xl font-bold mb-4 text-center lg:text-left">What Our Clients Say</h2>
+      <div className="bg-white/5 p-6 sm:p-8 rounded-lg border border-white/10">
+        <p className="text-white/80 italic">
+          "Working with Azentra was a game-changer. Their attention to detail and creative vision transformed our online presence. The results speak for themselves."
+        </p>
+        <div className="mt-4 flex items-center">
+          <img src="https://i.pravatar.cc/40?img=1" alt="Client" className="w-10 h-10 rounded-full" />
+          <div className="ml-4">
+            <p className="font-semibold">Jane Doe</p>
+            <p className="text-sm text-white/60">CEO, Future Corp</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Repeat Social Proof for a second testimonial (optional) */}
+    <div className="flex-1">
+      <div className="bg-white/5 p-6 sm:p-8 rounded-lg border border-white/10">
+        <p className="text-white/80 italic">
+          "Azentra brought our SaaS to life! Fantastic collaboration and reliable support even after launch."
+        </p>
+        <div className="mt-4 flex items-center">
+          <img src="https://i.pravatar.cc/40?img=2" alt="Client" className="w-10 h-10 rounded-full" />
+          <div className="ml-4">
+            <p className="font-semibold">John Smith</p>
+            <p className="text-sm text-white/60">Product Lead, AppStart</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* FAQ Section */}
+  <div className="w-full max-w-2xl mx-auto">
+    <h2 className="text-3xl font-bold mb-6 text-center">Frequently Asked Questions</h2>
+    <div>
+      <FaqItem
+        question="What is the average project timeline?"
+        answer="Timelines vary based on complexity, but a typical website project takes 6-8 weeks from discovery to launch."
+      />
+      <FaqItem
+        question="How much does a project cost?"
+        answer="Costs are determined by the project scope. We offer packages for startups and custom quotes for enterprise-level projects. Check our 'Get Started' page for more details."
+      />
+      <FaqItem
+        question="Do you offer ongoing support?"
+        answer="Yes, we provide monthly retainers for maintenance, updates, and ongoing strategic support to ensure your digital product continues to perform optimally."
+      />
+    </div>
+  </div>
+</Section>
+
 
         {/* Contact Teaser */}
         <Section className="mt-24 py-16 text-center bg-gradient-to-r from-brand-purple/20 to-brand-cyan/20 rounded-lg">

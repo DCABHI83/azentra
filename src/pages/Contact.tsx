@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form Submitted:', formData);
+    // console.log('Form Submitted:', formData);
     // Here you would typically send the data to a backend or email service
     setIsSubmitted(true);
     setFormData({ name: '', email: '', message: '' });
@@ -61,7 +61,7 @@ const Contact: React.FC = () => {
                 <p className="mt-2 text-white/80">Your message has been sent. We'll get back to you shortly.</p>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6" action='https://formspree.io/f/xwpzkrnd' method='post'>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-white/80">Name</label>
                 <input
